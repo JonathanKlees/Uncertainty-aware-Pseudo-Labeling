@@ -1,0 +1,20 @@
+%% ---- annotation cost table ----
+\begin{table}[t]
+\centering
+\caption{Estimated annotation costs for our approach depending on the dataset and annotation budget. The estimate is based on each dataset's median answer time per object and is compared to the annotation costs of fully manual annotation with soft labels as done by~\cite{benchmark}.}
+\label{tab:annotation_cost}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{llrrrr}
+\toprule
+ & Median & \multicolumn{3}{c}{Cost at budget (h)} & Fully manual \\
+\cmidrule(lr){3-5}
+Dataset &  answer time (s) & 1\% & 10\% & 100\% & annotation (h) \\
+\midrule
+COCO & 1.14 & 0.3 & 2.7 & 27.2 & 2,005.4 \\
+Cityscapes & 0.82 & 0.2 & 1.8 & 17.7 & 992.2 \\
+KITTI & 1.00 & 0.3 & 2.8 & 27.9 & 1,306.9 \\
+Pascal VOC & 0.87 & 0.1 & 1.4 & 14.1 & 1,016.9 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

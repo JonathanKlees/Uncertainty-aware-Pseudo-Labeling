@@ -1,0 +1,125 @@
+\begin{figure*}[p]
+    \centering
+    \captionsetup[subfigure]{skip=1pt}
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/agreement_0.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-agreement-voc-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/agreement_0.png}
+        \caption{Cityscapes}
+        \label{fig:visual-agreement-cityscapes-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/agreement_1.png}
+        \caption{KITTI}
+        \label{fig:visual-agreement-kitti-0}
+    \end{subfigure}
+    \par
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/agreement_1.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-agreement-voc-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/agreement_3.png}
+        \caption{Cityscapes}
+        \label{fig:visual-agreement-cityscapes-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/agreement_3.png}
+        \caption{KITTI}
+        \label{fig:visual-agreement-kitti-1}
+    \end{subfigure}
+    \caption{Agreement examples on Pascal VOC, Cityscapes and KITTI: cases where our method's estimate and GDino's calibrated confidence agree on the predicted class.}
+    \label{fig:visual-agreement-other}
+\end{figure*}
+
+\begin{figure*}[p]
+    \centering
+    \captionsetup[subfigure]{skip=1pt}
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/disagreement_0.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-disagreement-voc-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/disagreement_2.png}
+        \caption{Cityscapes}
+        \label{fig:visual-disagreement-cityscapes-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/disagreement_2.png}
+        \caption{KITTI}
+        \label{fig:visual-disagreement-kitti-0}
+    \end{subfigure}
+    \par
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/disagreement_2.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-disagreement-voc-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/disagreement_3.png}
+        \caption{Cityscapes}
+        \label{fig:visual-disagreement-cityscapes-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/uncertain_gt_0.png}
+        \caption{KITTI}
+        \label{fig:visual-disagreement-kitti-1}
+    \end{subfigure}
+    \caption{Disagreement examples on Pascal VOC, Cityscapes and KITTI: cases where our method's estimate and GDino's calibrated confidence disagree on the predicted class. In the bottom Cityscapes example, GDino is correct and our estimate is not.}
+    \label{fig:visual-disagreement-other}
+\end{figure*}
+
+\begin{figure*}[p]
+    \centering
+    \captionsetup[subfigure]{skip=1pt}
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/uncertain_gt_1.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-uncertain-gt-voc-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/uncertain_gt_0.png}
+        \caption{Cityscapes}
+        \label{fig:visual-uncertain-gt-cityscapes-0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/uncertain_gt_2.png}
+        \caption{KITTI}
+        \label{fig:visual-uncertain-gt-kitti-0}
+    \end{subfigure}
+    \par
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/voc_trainval/uncertain_gt_2.png}
+        \caption{Pascal VOC}
+        \label{fig:visual-uncertain-gt-voc-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/cityscapes_trainval/uncertain_gt_2.png}
+        \caption{Cityscapes}
+        \label{fig:visual-uncertain-gt-cityscapes-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\linewidth]{imgs/examples/kitti_train/uncertain_gt_3.png}
+        \caption{KITTI}
+        \label{fig:visual-uncertain-gt-kitti-1}
+    \end{subfigure}
+    \caption{Uncertain ground truth examples on Pascal VOC, Cityscapes and KITTI: cases where the soft ground truth itself is not fully confident (max class probability $< 0.9$).}
+    \label{fig:visual-uncertain-gt-other}
+\end{figure*}

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Label-error detection: AP and best F1 (both \%) for ranking originally-false-positive detections against the reference-consistent label-error set (IoU $\geq 0.1$), at SCORE\_THR=0.01. Bold = best, underline = second-best per column. Bayesian PLS blends the PLS-propagated objectness score with calibrated GDino score at the AP-selected kappa.}
+\label{tab:label_error_detection_thr001}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{COCO} & \multicolumn{2}{c}{Cityscapes} & \multicolumn{2}{c}{KITTI} & \multicolumn{2}{c}{Pascal VOC} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+Method & AP & F1 & AP & F1 & AP & F1 & AP & F1 \\
+\midrule
+Random & 3.50 & 7.30 & 1.69 & 3.36 & 3.50 & 6.76 & 0.65 & 1.30 \\
+GDino & \underline{34.51} & \underline{40.89} & \underline{19.36} & \textbf{26.99} & \textbf{58.80} & \textbf{57.05} & \textbf{35.91} & \textbf{41.29} \\
+Bayesian PLS & \textbf{34.56} & \textbf{41.16} & \textbf{21.03} & \underline{26.66} & \underline{37.62} & \underline{41.96} & \underline{33.98} & \underline{37.88} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

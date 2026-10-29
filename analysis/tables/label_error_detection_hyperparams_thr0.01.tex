@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Winning Bayesian-blend hyperparameters at SCORE\_THR=0.01, honest-search-selected by AP on held-out original-GT TP/FP (never the label-error set itself). $\kappa$ close to 0 means the blend relies almost entirely on PLS's own propagated evidence; $\kappa \to \infty$ would mean it collapses onto the calibrated-GDino prior alone.}
+\label{tab:label_error_detection_hyperparams_thr001}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & $k$ & $\alpha$ & bandwidth & $\kappa$ \\
+\midrule
+COCO & 200 & 0.02 & 1 & 0.5 \\
+Cityscapes & 150 & 0.075 & 1 & 0.001 \\
+KITTI & 10 & 0.15 & 0.3 & 0.001 \\
+Pascal VOC & 150 & 0.15 & 0.15 & 0.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
