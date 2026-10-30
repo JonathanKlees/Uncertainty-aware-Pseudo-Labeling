@@ -1,4 +1,4 @@
-# Probabilistic Label Spreading for Object-Detection Annotation
+# Uncertainty-aware Pseudo-Labeling of Object Detection Datasets
 
 Semi-supervised, uncertainty-aware annotation of object-detection datasets:
 starting from a small labeled budget plus an open-vocabulary detector's
